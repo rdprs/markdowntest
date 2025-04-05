@@ -1,10 +1,10 @@
 # Fake Copy Button Example
 
-This is a fake copy button that demonstrates copying functionality. The button shows that it will copy `abc`, but it actually copies `cba`.
+This is a demonstration of a **fake copy button** that shows it will copy `abc`, but it actually copies `cba`.
 
-## How it works:
+## Instructions
 
-Click the button below, and the content you will copy will be the reversed version of `abc`.
+Click the button below, and it will show that it copies `abc`, but instead, it will actually copy `cba`.
 
 ```html
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ Click the button below, and the content you will copy will be the reversed versi
     <title>Fake Copy Button</title>
     <script>
         function copyText() {
-            const textToCopy = 'cba';  // Reversed version of abc
+            const textToCopy = 'cba';  // This is what actually gets copied (reversed 'abc')
             const tempInput = document.createElement('input');
             document.body.appendChild(tempInput);
             tempInput.value = textToCopy;
@@ -27,6 +27,7 @@ Click the button below, and the content you will copy will be the reversed versi
     </script>
 </head>
 <body>
+    <!-- This is the fake copy button -->
     <button onclick="copyText()">Copy abc</button>
 </body>
 </html>
